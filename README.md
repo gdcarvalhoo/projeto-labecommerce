@@ -1,106 +1,126 @@
-<h1  align="center">Projeto-LabeCommerce</h1>
-
-  
+<h1  align="center">API Labook</h1> 
 
 ## Sobre esse projeto 📖
+Labook API A Labook API é uma aplicação que oferece uma plataforma de rede social, permitindo que os usuários se conectem e interajam. Esta API foi desenvolvida seguindo as melhores práticas e utiliza uma variedade de tecnologias para fornecer uma experiência segura e eficiente para os usuários do Labook.
 
-  
-
-O projeto LabeCommerce é uma API de comércio eletrônico desenvolvida em NodeJS utilizando TypeScript, Express, Knex e SQLite. A API possui diversas funcionalidades, como cadastrar e buscar usuários, cadastrar, buscar e editar produtos, cadastrar compras e buscar informações sobre compras específicas.
-
-  
-
-A base de dados é gerenciada pelo Knex, que utiliza o SQLite como banco de dados.
-
-  
-
-O projeto também conta com uma documentação clara e objetiva, que descreve as funcionalidades disponíveis e como utilizá-las. Isso torna o desenvolvimento e a integração com outras aplicações mais fácil e rápida.
-
-  
-
-Por fim, o LabeCommerce é um projeto completo e funcional que pode ser utilizado como base para o desenvolvimento de aplicações de comércio eletrônico em NodeJS.
 ## Funcionalidades 📋
-A coleção LabeCommerce no Postman é uma coleção de endpoints de API para gerenciar uma plataforma de comércio eletrônico. Esta coleção inclui endpoints para gerenciar usuários, produtos e compras. A seguir estão os detalhes dos endpoints nesta coleção:
+A Labook API oferece uma coleção de endpoints que permitem gerenciar usuários, posts e curtidas na plataforma de rede social. Abaixo estão detalhes das principais funcionalidades disponíveis:
 
--   **`Get All Users`**: este endpoint retorna todos os usuários cadastrados no sistema.
--   **`Create User`**: este endpoint cria um novo usuário na plataforma.
--   **`Create Product`**: este endpoint permite criar um novo produto na plataforma.
--   **`Get all products 1`**: este endpoint retorna todos os produtos disponíveis na plataforma.
--   **`Get all products 2 ( search product by name)`**: este endpoint retorna todos os produtos que correspondem ao nome do produto especificado.
--   **`Edit product by id`**: este endpoint permite atualizar as informações de um produto existente com base no ID do produto.
--   **`Create Purchase`**: este endpoint permite criar uma nova compra de um ou mais produtos.
--   **`Delete purchase by id`**: este endpoint permite excluir uma compra existente com base no ID da compra.
--   **`Get Purchase by id`**: este endpoint retorna informações sobre uma compra existente com base no ID da compra especificada.
+**`SignUp`**: Realiza o cadastro de um novo usuário no sistema.
 
-Em resumo, a coleção LabeCommerce oferece uma gama completa de endpoints de API para gerenciar usuários, produtos e compras em uma plataforma de comércio eletrônico. Esses endpoints podem ser usados ​​por desenvolvedores e outras partes interessadas para interagir com a plataforma por meio de chamadas de API bem definidas.
+**`Login`**: Retorna um token de autenticação após verificar as credenciais do usuário.
+
+**`CreatePost`**: Permite a criação de um novo post associado ao ID do usuário.
+
+**`GetPost`**:Recebe um token de autenticação e retorna todos os posts criados pelo usuário.
+
+**`EditPost`**: Permite a edição de um post existente.
+
+**`DeletePost`**: Permite excluir um post existente com base no ID.
+
+**`LikeOrDislike`**: Permite que um usuário dê um like ou dislike em um post de outro usuário.
+
+Esses endpoints fornecem uma ampla gama de funcionalidades para os desenvolvedores e outras partes interessadas acessarem e interagirem com a Labook API por meio de chamadas de API bem definidas.
 
 A documentação completa está nesse link:
-https://documenter.getpostman.com/view/26335727/2s93Y5Pf2Q
+
 
 ## Tecnologias utilizadas 💾
 
-  
-<center></center>
+A Labook API foi desenvolvida utilizando as seguintes tecnologias:
 
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png" width="100" align="middle"> &emsp;Plataforma de desenvolvimento de software para construir aplicativos escaláveis ​​em JavaScript.</img> </p>
-  
-<p>&ensp;<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png" width="80" align="middle">&emsp;&emsp;  Superset do JavaScript que adiciona tipos estáticos opcionais à linguagem.</img>    
-<Br></br>
-  
-<img src="https://i.imgur.com/4JL9wiX.png" width="100" align="middle">&emsp;&#160;&#160;Framework de aplicativo para NodeJS que fornece uma camada abstrata para lidar com as solicitações HTTP.</img>
-<Br></br>
+NodeJS: plataforma de desenvolvimento backend baseada em JavaScript.
 
-<img src="https://i.imgur.com/js3WxuF.png" width="100" align="middle">&emsp;&#160;&#160;Linguagens de consulta estruturada e um banco de dados relacional embutido, respectivamente, usados para gerenciar a 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;persistência de dados do projeto.</img>
+TypeScript: superset do JavaScript que traz recursos adicionais de tipagem estática.
 
-<img src="https://i.imgur.com/9GkFD1T.png" width="100" align="middle">&emsp;&ensp;&nbsp;Biblioteca de construção de consultas SQL para NodeJS que suporta vários bancos de dados.</img>   
+Express: framework web utilizado para criar aplicativos e APIs em NodeJS.
 
-&ensp;<img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/postman-icon.png" width="90" align="middle">&emsp;&emsp;Ambiente de desenvolvimento de API que permite testar APIs e criar solicitações HTTP.</img>
-  
+SQLite: linguagem de consulta estruturada e sistema de gerenciamento de banco de dados relacionais.
+
+Knex: biblioteca para construção de consultas SQL de forma simples e intuitiva.
+
+Programação Orientada a Objetos (POO): paradigma de programação que organiza o código em objetos e classes.
+
+Arquitetura em camadas: abordagem que divide a aplicação em camadas para uma melhor organização e manutenção do código.
+
+Geração de UUID: criação de identificadores únicos universalmente.
+
+Geração de hashes: processo de converter dados em uma sequência alfanumérica de tamanho fixo.
+
+Autenticação e autorização: mecanismos utilizados para garantir a segurança e controle de acesso aos recursos da aplicação.
+
+Roteamento: definição de rotas para acessar diferentes recursos da API.
+
+Postman: plataforma para testar e documentar APIs.
+
+Banco de dados: armazenamento de informações relacionais utilizadas pela aplicação.
+
 
 ## Instalação 🛠️
 
-  
+Para utilizar a API Labook em seu ambiente local, siga as instruções abaixo para a instalação e configuração adequadas.
 
-Para instalar o projeto que utiliza NodeJS, Typescript, Express, SQL e SQLite, Knex e Postman, siga as seguintes etapas:
+### [](https://github.com/gdcarvalhoo/projeto-labook-backend/tree/Labook-Guilherme_Carvalho-BarbosaD#pr%C3%A9-requisitos)Pré-requisitos
 
-  
+Antes de iniciar a instalação, verifique se o seu sistema possui os seguintes pré-requisitos:
 
-<b>Instalação do NodeJS</b>: faça o download do NodeJS em https://nodejs.org/en/download/ e instale-o seguindo as instruções do instalador.  
-  
+-   Node.js (versão 14 ou superior)
+-   NPM (Node Package Manager) ou Yarn
 
-<b>Instalação do Typescript</b>: abra o terminal ou prompt de comando e digite o comando `npm install -g typescript`. Isso instalará o Typescript globalmente em sua máquina.
+### [](https://github.com/gdcarvalhoo/projeto-labook-backend/tree/Labook-Guilherme_Carvalho-BarbosaD#passo-a-passo)Passo a passo✅
 
-  
+1.  Faça o download ou clone o repositório da API Labook em seu ambiente local.
+    
+2.  Abra o terminal e navegue até o diretório raiz do projeto.
+    
+3.  Execute o seguinte comando para instalar as dependências necessárias:
+    
+    ```
+    `npm install` 
+    
+    ```
+    
+    ou, se estiver utilizando o Yarn:
+    
+    ```
+    `yearn` 
+    
+    ```
+    
+4.  Crie um arquivo  `.env`  na raiz do projeto e defina as seguintes variáveis de ambiente:
+    
+    ```
+    DB_HOST=seu_host,
+    DB_USER=seu_usuario
+    DB_PASSWORD=sua_senha
+    DB_DATABASE=seu_banco_de_dados
+    JWT_SECRET=sua_chave_secreta
+    
+    ```
+    
+    Certifique-se de substituir os valores  `seu_host`,  `seu_usuario`,  `sua_senha`  e  `seu_banco_de_dados`  pelas informações correspondentes ao seu banco de dados.
+    
+    A variável  `JWT_SECRET`  é utilizada para a geração de tokens JWT e pode ser definida como uma string de sua escolha.
+    
+5.  Execute o seguinte comando para criar as tabelas no banco de dados:
+    
+    `npm run create-tables`
+    
+    ou, se estiver utilizando o Yarn:  `yarn create-tables`
+    
+6.  Finalmente, inicie a API Labook executando o seguinte comando:
+    
+    `npm start`
+    
+    ou, com o Yarn:
+    
+    `yarn start`
+    
+    A API estará disponível no endereço  `http://localhost:3000`.
+    
 
-**Criação do projeto**: crie uma pasta para o projeto e abra o terminal ou prompt de comando na pasta criada. Em seguida, digite o comando `npm init -y`. Isso criará um arquivo package.json padrão na pasta do projeto.
+Agora você pode utilizar a API Labook para criar, editar, excluir e interagir com publicações e usuários na rede social Labook. Certifique-se de consultar a documentação dos endpoints para obter mais detalhes sobre como utilizar cada funcionalidade.
 
-  
+## [](https://github.com/gdcarvalhoo/projeto-labook-backend/tree/Labook-Guilherme_Carvalho-BarbosaD#status-do-projeto--)Status do Projeto  🚧
 
-**Instalação do Express e SQLite**: digite o comando `npm install express sqlite3 @types/express @types/sqlite3` no terminal ou prompt de comando na pasta do projeto.
-
-  
-
-**Instalação do Knex**: digite o comando `npm install knex @types/knex sqlite3` no terminal ou prompt de comando na pasta do projeto.  
-
-**Configuração do Knex**: crie um arquivo knexfile.js na raiz do projeto com as configurações do banco de dados. Em seguida, crie um arquivo database.ts na pasta src com as configurações do Knex para acessar o banco de dados.  
-
-**Instalação do Postman**: faça o download e instale o Postman em https://www.postman.com/downloads/.
-
-## Colaboradores 🤝
-Acredito que todos aqueles que no decorrer do projeto me ajudaram ou pediram ajuda para desenvolvimento, meus agradecimentos:
-
-**Arthur Felix**
-
-**Felício de Souza**
-
-**Jaziel Bury**
-
-**Pedro Henrique**
-
-**Pedro Magno**
-## Status do projeto 🎉
-Finalizado.
-
-
-
+Em correção.
